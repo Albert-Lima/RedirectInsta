@@ -25,6 +25,7 @@ body{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     height: 100vh;
+    overflow: hidden;
 }
 #ButtonsLinks{
     margin: auto;
