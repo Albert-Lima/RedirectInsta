@@ -9,21 +9,9 @@
     --FontParágrafos: 'League Spartan', sans-serif;
     --FontTitles: 'Marck Script', cursive;
 }
-@keyframes BackgroundAnime {
-    0%{
-        background-position: 0%;
-    }
-    100%{
-        background-position: 100%;
-    }
-}
 body{
     background-image: linear-gradient(to right bottom, black, #340810);
     background-size: 300%;
-    animation-name: BackgroundAnime;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     height: 105vh;
 }
 #ButtonsLinks{
