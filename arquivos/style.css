@@ -110,13 +110,15 @@ h2{
 .CellPhone p{
     font-family: var(--FontParágrafos);
     font-size: 10pt;
+    color: gray;
 }
 .Local p{
     font-family: var(--FontParágrafos);
     font-size: 10pt;
+    color: gray;
 }
 .Icon{
-    filter: brightness(0);
+    filter: brightness(0.3);
     height: 15px;
 }
 #Copy{
