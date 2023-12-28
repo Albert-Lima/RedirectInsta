@@ -12,12 +12,12 @@
 body{
     background-image: linear-gradient(to right bottom, black, #340810);
     background-size: 300%;
-    height: max-content;
+    height: 110vh;
     padding-bottom: 20px;
 }
 #ButtonsLinks{
     margin: auto;
-    height: 534px;
+    height: max-content;
     min-width: 300px;
     max-width: 500px;
     margin-top: 50px;
@@ -64,10 +64,6 @@ body{
     width: 165px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
 }
 .iconInsta{
     margin-top: 10px;
@@ -93,13 +89,8 @@ h2{
     font-family: var(--FontParágrafos);
     text-align: center;
     justify-content: center;
-}
-.LinkIsta:hover{
-    width: 85px;
-    transition: 0.2s;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 18px;
+    position: relative;
+    top: -20px;
 }
 #Copy p{
     text-align: center;
