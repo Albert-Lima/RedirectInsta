@@ -9,134 +9,72 @@
     --FontParágrafos: 'League Spartan', sans-serif;
     --FontTitles: 'Marck Script', cursive;
 }
-body{
-    background-image: linear-gradient(to right bottom, black, #340810);
-    background-size: 300%;
-    height: 110vh;
-    padding-bottom: 20px;
+@keyframes animaçãoButton {
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 5px;
+    }
 }
-#ButtonsLinks{
-    margin: auto;
-    height: max-content;
-    min-width: 300px;
-    max-width: 500px;
-    margin-top: 50px;
+.bloco{
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-.button{
-    height: 165px;
-    width: 100%;
-    border-radius: 10px;
+.ContainerFlyer{
+    width: 400px;
+    height: 400px;
     background-color: rgb(255, 255, 255);
-    box-shadow: inset 0px -20px 50px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
 }
-.boxLink{
-    height: 165px;
-    width: calc(100% - 165px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.ContainerFlyer img{
+    width: 400px;
+    height: 400px;
 }
-#Perfil1{
-    background-image: url('imagens/alugaFacilLogo.jpg');
-    background-size: cover;
-}
-#Perfil2{
-    background-image: url('imagens/PraçaLogo.jpg');
-    background-size: cover;
-}
-#Perfil3{
-    background-image: url('imagens/ShellpiLogo.jpg');
-    background-size: cover;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.082);
-}
-.Perfil{
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.082);
-    height: 100%;
-    width: 165px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-.iconInsta{
-    margin-top: 10px;
-    height: 50px;
-}
-h2{
+.Frase p{
     font-family: var(--FontParágrafos);
-    font-size: 10pt;
-    font-weight: 400;
+    font-size: 12pt;
+    font-weight: 600;
+    margin-top: 20px;
+    color: black;
 }
-.LinkIsta{
-    background-image: linear-gradient(to right bottom, var(--Cor1), var(--Cor2), var(--Cor3));
-    backdrop-filter: blur(2px);
-    margin-bottom: 10px;
-    width: 80px;
-    border: 1px white solid;
+.RedirectButton{
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+}
+.RedirectButton a{
+    text-decoration: none;
+    font-family: var(--FontParágrafos);
+    color: white;
+    background-image: linear-gradient(to right top, var(--Cor1), var(--Cor2), var(--Cor3));
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.12);
-    color: white;
-    text-decoration: none;
-    font-family: var(--FontParágrafos);
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    top: -20px;
-}
-#Copy p{
-    text-align: center;
-    margin-top: 12px;
-    color: white;
-    font-family: var(--FontParágrafos);
-    font-size: 10pt;
-}
-.CellPhone, .Local{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    gap: 8px;
-}
-.CellPhone p{
-    font-family: var(--FontParágrafos);
-    font-size: 10pt;
-    color: gray;
-}
-.Local p{
-    font-family: var(--FontParágrafos);
-    font-size: 10pt;
-    color: gray;
-}
-.Icon{
-    filter: brightness(0.3);
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.103);
     height: 15px;
+    animation-name: animaçãoButton;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-#Copy{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-#LimaDev{
-    color: var(--Cor3);
-    text-decoration: none;
-    margin: auto;
-    font-family: var(--FontParágrafos);
-}
-#LimaDev:hover{
-    color: #972a3e;
+/*RESPONSIVIDADE*/
+@media (max-width: 400px){
+    .bloco{
+        height: 500px;
+    }
+    .ContainerFlyer{
+        width: 95%;
+        height: max-content;
+    }
+    .ContainerFlyer img{
+        width: 100%;
+        height: auto;
+    }
 }
