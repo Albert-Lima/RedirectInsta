@@ -78,5 +78,6 @@
     }
     .ContainerFlyer{
         width: 95%;
+        max-height: 350px;
     }
 }
