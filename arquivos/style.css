@@ -32,15 +32,17 @@
 #Container1{
     background-image: url('imagens/IMG-20240104-WA0009.jpg');
     background-size: cover;
+    background-position: center center;
 }
 #Container2{
     background-image: url('imagens/IMG-20240104-WA0010.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 #Container3{
     background-image: url('imagens/IMG-20240105-WA0031.jpg');
     background-size: cover;
+    background-position: center center;
 }
 .Frase p{
     font-family: var(--FontParágrafos);
