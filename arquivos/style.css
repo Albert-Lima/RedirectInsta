@@ -18,15 +18,16 @@
     }
 }
 .bloco{
-    height: 80vh;
+    height: max-content;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .ContainerFlyer{
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 180px;
     border-radius: 20px;
 }
 #Container1{
@@ -80,6 +81,6 @@
     }
     .ContainerFlyer{
         width: 95%;
-        max-height: 350px;
+        height: 300px;
     }
 }
