@@ -42,7 +42,7 @@
 #Container1{
     background-image: url('imagens/IMG-20240104-WA0009.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
 }
 #Container2{
     background-image: url('imagens/IMG-20240104-WA0010.jpg');
