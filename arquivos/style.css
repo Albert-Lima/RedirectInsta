@@ -26,9 +26,22 @@
     justify-content: center;
 }
 .ContainerFlyer{
-    width: 230px;
-    height: 180px;
+    width: 90%;
+    height: 30vh;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.ContainerFlyer::after{
+    content: "";
+    width: 90%;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.138);
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
 }
 #Container1{
     background-image: url('imagens/IMG-20240104-WA0009.jpg');
@@ -45,12 +58,21 @@
     background-size: cover;
     background-position: center center;
 }
-.Frase p{
+#fraseBar, #fraseShellpi{
     font-family: var(--FontParágrafos);
-    font-size: 12pt;
+    font-size: 13pt;
     font-weight: 600;
     margin-top: 10px;
     color: black;
+    text-shadow: 0px 0px 4px white;
+}
+#fraseAluga{
+    color: white;
+    font-family: var(--FontParágrafos);
+    font-size: 13pt;
+    font-weight: 600;
+    margin-top: 10px;
+    text-shadow: 0px 0px 4px black;
 }
 .RedirectButton{
     margin-top: 20px;
