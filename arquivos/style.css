@@ -40,23 +40,23 @@
     align-items: center;
 }
 #Container1{
-    background-image: url('imagens/IMG-20240104-WA0009.jpg');
+    background-image: url('imagens/LogoAlugaFacil.png');
     background-size: cover;
     background-position: center bottom;
 }
 #Container2{
-    background-image: url('imagens/IMG-20240104-WA0010.jpg');
+    background-image: url('imagens/LogoPraça.png');
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
 }
 #Container3{
-    background-image: url('imagens/IMG-20240105-WA0031.jpg');
+    background-image: url('imagens/logoShellpi.png');
     background-size: cover;
     background-position: center center;
 }
 #fraseBar, #fraseShellpi{
     font-family: var(--FontParágrafos);
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 600;
     margin-top: 20px;
     color: black;
@@ -64,7 +64,7 @@
 #fraseAluga{
     color: white;
     font-family: var(--FontParágrafos);
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 600;
     margin-top: 10px;
 }
