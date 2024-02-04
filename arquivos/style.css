@@ -17,9 +17,15 @@
         margin-top: 5px;
     }
 }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .ContainerFlyer{
-    width: 500px;
     height: 30vh;
+    width: 30vh;
     border-radius: 20px;
     margin: auto;
     margin-top: 20px;
@@ -38,11 +44,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 #Container1{
-    background-image: url('imagens/LogoAlugaFacil.png');
+    background-image: url('imagens/logoShellpi.png');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
 }
 #Container2{
     background-image: url('imagens/LogoPraça.png');
@@ -50,26 +57,29 @@
     background-position: center top;
 }
 #Container3{
-    background-image: url('imagens/logoShellpi.png');
+    background-image: url('imagens/LogoAlugaFacil.png');
+    background-position: center bottom;
     background-size: cover;
-    background-position: center center;
 }
 #fraseBar, #fraseShellpi{
     font-family: var(--FontParágrafos);
-    font-size: 13pt;
+    font-size: 9pt;
     font-weight: 600;
     margin-top: 20px;
     color: black;
+    text-align: center;
 }
 #fraseAluga{
     color: white;
     font-family: var(--FontParágrafos);
-    font-size: 13pt;
+    font-size: 9pt;
     font-weight: 600;
     margin-top: 10px;
 }
 .RedirectButton{
+    margin: auto;
     margin-top: 20px;
+    width: 96%;
     height: 50px;
     display: flex;
 }
@@ -83,7 +93,7 @@
     padding-left: 10px;
     padding-top: 8px;
     padding-bottom: 8px;
-    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.103);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.196);
     height: 15px;
     animation-name: animaçãoButton;
     animation-duration: 0.4s;
@@ -91,8 +101,17 @@
     animation-direction: alternate;
 }
 /*Responsividade*/
-@media (max-width: 530px) {
+@media (max-height: 300px){
+    body{
+        flex-direction: row;
+    }
     .ContainerFlyer{
-        width: 90%;
+        height: 70vh;
+        width: 70vh;
+    }
+}
+@media (max-height: 541px){
+    .RedirectButton a{
+        font-size: 12pt;
     }
 }
