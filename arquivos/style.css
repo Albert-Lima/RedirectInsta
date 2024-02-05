@@ -75,6 +75,7 @@ body{
     font-size: 9pt;
     font-weight: 600;
     margin-top: 10px;
+    text-align: center;
 }
 .RedirectButton{
     margin: auto;
@@ -84,6 +85,7 @@ body{
     display: flex;
 }
 .RedirectButton a{
+    margin: auto;
     text-decoration: none;
     font-family: var(--FontParágrafos);
     color: white;
@@ -101,17 +103,19 @@ body{
     animation-direction: alternate;
 }
 /*Responsividade*/
-@media (max-height: 300px){
+@media (max-height: 375px){
     body{
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     .ContainerFlyer{
-        height: 70vh;
-        width: 70vh;
+        height: 50vh;
+        width: 50vh;
     }
 }
 @media (max-height: 541px){
     .RedirectButton a{
-        font-size: 12pt;
+        font-size: 8pt;
     }
 }
