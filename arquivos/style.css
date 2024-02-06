@@ -62,7 +62,7 @@ body{
 }
 #fraseBar{
     font-family: var(--FontParágrafos);
-    font-size: 9pt;
+    font-size: 10pt;
     font-weight: 600;
     margin-top: 20px;
     color: rgb(255, 255, 255);
@@ -71,7 +71,7 @@ body{
 }
 #fraseShellpi{
     font-family: var(--FontParágrafos);
-    font-size: 9pt;
+    font-size: 10pt;
     font-weight: 600;
     margin-top: 20px;
     color: rgb(0, 0, 0);
@@ -81,7 +81,7 @@ body{
 #fraseAluga{
     color: white;
     font-family: var(--FontParágrafos);
-    font-size: 9pt;
+    font-size: 10pt;
     font-weight: 600;
     margin-top: 10px;
     text-align: center;
