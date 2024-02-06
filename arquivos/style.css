@@ -51,9 +51,9 @@ body{
     background-position: center center;
 }
 #Container2{
-    background-image: url('imagens/PraçaLogoDark.png');
+    background-image: url('imagens/LogoPraça.png');
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
 }
 #Container3{
     background-image: url('imagens/LogoAluga.png');
@@ -97,6 +97,7 @@ body{
     margin: auto;
     text-decoration: none;
     font-family: var(--FontParágrafos);
+    font-size: 9pt;
     color: white;
     background-image: linear-gradient(to right top, var(--Cor1), var(--Cor2), var(--Cor3));
     border-radius: 5px;
