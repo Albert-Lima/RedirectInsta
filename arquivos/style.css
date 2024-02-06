@@ -62,7 +62,7 @@ body{
 }
 #fraseBar{
     font-family: var(--FontParágrafos);
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: 600;
     margin-top: 20px;
     color: rgb(255, 255, 255);
